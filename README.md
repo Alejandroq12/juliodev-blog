@@ -140,18 +140,18 @@ Not available at the moment.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [] **Creating a data model.**
-- [] **Validations and Model specs.**
-- [] **Processing data in models.**
-- [] **Controllers.**
-- [] **Controllers specs.**
-- [] **Views.**
-- [] **Forms.**
-- [] **Integration specs for Views and fixing n+1 problems.**
-- [] **Add Devise.**
-- [] **Add authorization rules.**
-- [] **Add API endpoints.**
-- [] **API documentation.**
+- [ ] **Creating a data model.**
+- [ ] **Validations and Model specs.**
+- [ ] **Processing data in models.**
+- [ ] **Controllers.**
+- [ ] **Controllers specs.**
+- [ ] **Views.**
+- [ ] **Forms.**
+- [ ] **Integration specs for Views and fixing n+1 problems.**
+- [ ] **Add Devise.**
+- [ ] **Add authorization rules.**
+- [ ] **Add API endpoints.**
+- [ ] **API documentation.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
