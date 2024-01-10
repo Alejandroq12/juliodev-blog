@@ -85,6 +85,8 @@ npm install
 
 ### Database
 
+Important: please, rename .env.example to .env and fill out all necessary fields otherwise you will be able to connect to the database.
+
 Before running the migrations and seeds, ensure that PostgreSQL is installed and running:
 
 ```sh
@@ -94,13 +96,13 @@ sudo service postgresql start
 Run migrations:
 
 ```sh
-rake db:migrate
+rails db:migrate
 ```
 
 Add the seeds(omit it for this project):
 
 ```sh
-rake db:seed
+rails db:seed
 ```
 
 ### Usage
@@ -140,7 +142,7 @@ Not available at the moment.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Creating a data model.**
+- [x] **Creating a data model.**
 - [ ] **Validations and Model specs.**
 - [ ] **Processing data in models.**
 - [ ] **Controllers.**
