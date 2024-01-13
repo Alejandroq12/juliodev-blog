@@ -21,6 +21,7 @@
     - [Database](#database)
     - [Usage](#usage)
     - [Run tests](#run-tests)
+    - [Run linter](#run-linter)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
@@ -118,6 +119,14 @@ rails server
 To run tests, run the following command:
 
 ```sh
+rspec
+```
+
+### Run linter
+
+To run tests, run the following command:
+
+```sh
 rubocop
 ```
 
@@ -143,8 +152,8 @@ Not available at the moment.
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [x] **Creating a data model.**
-- [ ] **Validations and Model specs.**
-- [ ] **Processing data in models.**
+- [x] **Validations and Model specs.**
+- [x] **Processing data in models.**
 - [ ] **Controllers.**
 - [ ] **Controllers specs.**
 - [ ] **Views.**
