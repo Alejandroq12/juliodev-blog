@@ -28,7 +28,7 @@ RSpec.describe User, type: :model do
     end
 
     it 'returns the three most recent posts' do
-      expect(subject.recent_posts).to match_array([@newest_post, @middle_post, @older_post])
+      expect(User.recent_posts(subject.id)).to match_array([@newest_post, @middle_post, @older_post])
     end
   end
 end
