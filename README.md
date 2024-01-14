@@ -124,7 +124,7 @@ rspec
 
 ### Run linter
 
-To run tests, run the following command:
+To run linter, run the following command:
 
 ```sh
 rubocop
