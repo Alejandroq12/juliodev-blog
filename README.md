@@ -154,7 +154,7 @@ Not available at the moment.
 - [x] **Creating a data model.**
 - [x] **Validations and Model specs.**
 - [x] **Processing data in models.**
-- [ ] **Controllers.**
+- [x] **Controllers.**
 - [ ] **Controllers specs.**
 - [ ] **Views.**
 - [ ] **Forms.**
