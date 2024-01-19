@@ -116,13 +116,13 @@ rails server
 
 ### Run tests
 
-To run tests, run the following command:
+To execute all test suites in the application, use the following command in your terminal:
 
 ```sh
 rspec
 ```
 
-Run only controller requests tests
+If you wish to run only the controller request tests, you can specify the path to your request specs directory:
 
 ```sh
 rspec spec/requests/ 
