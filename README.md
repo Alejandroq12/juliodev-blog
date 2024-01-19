@@ -122,6 +122,12 @@ To run tests, run the following command:
 rspec
 ```
 
+Run only controller requests tests
+
+```sh
+rspec spec/requests/ 
+```
+
 ### Run linter
 
 To run linter, run the following command:
@@ -155,7 +161,7 @@ Not available at the moment.
 - [x] **Validations and Model specs.**
 - [x] **Processing data in models.**
 - [x] **Controllers.**
-- [ ] **Controllers specs.**
+- [x] **Controllers specs.**
 - [ ] **Views.**
 - [ ] **Forms.**
 - [ ] **Integration specs for Views and fixing n+1 problems.**
