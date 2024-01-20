@@ -1,28 +1,27 @@
-<h1>User name</h1>
-<p>Number of posts: x</p>
-
 <div>
-  <h3>Post #1</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <small>Comments: x, Likes: y</small>
-    <div>
-    <p><strong>Username:</strong> Comment 1</p>
-    <p><strong>Username:</strong> Comment 2</p>
-    <p><strong>Username:</strong> Comment 3</p>
-    <p><strong>Username:</strong> Comment 4</p>
-    <p><strong>Username:</strong> Comment 5</p>
+  <div>
+    <img src="<%= @user.photo %>" width="210" height="265" alt="profile picture">
   </div>
+  <h1><%= @user.name %></h1>
+  <p>Number of posts: <%= @user.posts_counter %></p>
 </div>
 
 <div>
-  <h3>Post #2</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <small>Comments: x, Likes: y</small>
+  <% @posts.each_with_index do |post, index|%>
+  <%= link_to  user_post_path(@user, post) do %>
+    <div>
+      <h3><%= post.title %> - Post #<%= index + 1 %></h3>
+      <p><%= post.text %></p>
+      <small>Comments: <%= post.comments_counter%>, Likes: <%= post.likes_counter %></small>
+      <div>
+        <% post.comments.each do |comment| %>
+        <p><strong><%= comment.user.name %></strong> <%= comment.text  %></p>
+        <% end %>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
   <div>
-    <p><strong>Username:</strong> Comment 1</p>
-    <p><strong>Username:</strong> Comment 2</p>
-    <p><strong>Username:</strong> Comment 3</p>
-    <p><strong>Username:</strong> Comment 4</p>
-    <p><strong>Username:</strong> Comment 5</p>
+    <button>Pagination</button>
   </div>
 </div>
