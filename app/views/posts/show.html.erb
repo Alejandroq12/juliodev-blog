@@ -3,7 +3,7 @@
   <small>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></small>
   <p><%= @post.text %></p>
   <div class="comments">
-    <% @post.comments.each do |comment| %>
+    <% @recent_comments.each do |comment| %>
       <%= render 'shared/comment', comment: comment %>
     <% end %>
   </div>
