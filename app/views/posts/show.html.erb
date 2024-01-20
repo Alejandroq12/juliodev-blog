@@ -1,10 +1,10 @@
-<div>
+<div class="post-details">
   <h1><%= @post.title %></h1>
   <small>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></small>
   <p><%= @post.text %></p>
-  <div>
-    <% @post.comments.each do |comment |%>
-    <p><strong><%= comment.user.name %></strong> <%= comment.text %></p>
+  <div class="comments">
+    <% @post.comments.each do |comment| %>
+      <%= render 'shared/comment', comment: comment %>
     <% end %>
   </div>
 </div>
