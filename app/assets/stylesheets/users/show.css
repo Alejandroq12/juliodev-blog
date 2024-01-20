@@ -1,0 +1,123 @@
+.user-profile {
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-photo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  background-color: #f3f3f3;
+  object-fit: cover;
+}
+
+.user-details h1 {
+  font-size: 24px;
+  margin: 0 20px 0 0;
+  flex-grow: 1;
+}
+
+.user-details p {
+  margin: 0;
+}
+
+.user-bio {
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+.user-bio h3 {
+  margin: 0 0 10px 0;
+}
+
+.user-bio p {
+  margin: 0;
+}
+
+.pagination button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.posts a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pagination button:hover {
+  background-color: #f7f7f7;
+}
+
+.all-posts-link {
+  text-align: center;
+  margin: 20px;
+}
+
+.all-posts-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: inherit;
+  background-color: #f3f3f3;
+  transition: background-color 0.3s;
+}
+
+.all-posts-link a:hover {
+  background-color: #e8e8e8;
+}
+
+.posts {
+  margin: 20px;
+}
+
+.posts a:hover {
+  background-color: #f7f7f7;
+}
+
+.posts a:focus {
+  outline: none;
+}
+
+.post-preview {
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.post-preview:hover {
+  background-color: #f7f7f7;
+}
+
+.post-preview h3 {
+  margin: 0 0 10px 0;
+}
+
+.post-preview p {
+  margin: 0 0 10px 0;
+}
+
+.post-preview small {
+  display: block;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.post-preview .comment {
+  padding-left: 20px;
+}
