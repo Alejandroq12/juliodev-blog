@@ -123,3 +123,18 @@ Comment.create(post: seventeenth_post, user: fourth_user, text: 'Consistency is 
 Comment.create(post: eighteenth_post, user: fifth_user, text: 'Vegetables are packed with nutrients, good reminder!')
 Comment.create(post: eighteenth_post, user: sixth_user, text: 'Any favorite veggie recipes?')
 Comment.create(post: eighteenth_post, user: first_user, text: 'Green leafy vegetables are my go-to.')
+
+# Create Likes
+users = [first_user, second_user, third_user, fourth_user, fifth_user, sixth_user]
+posts = [first_post, second_post, third_post, fourth_post, fifth_post, sixth_post, seventh_post, eighth_post, ninth_post, tenth_post, eleventh_post, twelfth_post, thirteenth_post, fourteenth_post, fifteenth_post, sixteenth_post, seventeenth_post, eighteenth_post]
+
+# Specify the number of likes for each post
+number_of_likes_per_post = 10
+
+posts.each do |post|
+  users.sample(number_of_likes_per_post).each do |user|
+    Like.create(user: user, post: post)
+  end
+end
+
+puts "Created #{posts.size * number_of_likes_per_post} likes."
