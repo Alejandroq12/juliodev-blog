@@ -1,27 +1,14 @@
-<div>
-  <div>
-    <img src="<%= @user.photo %>" width="210" height="265" alt="profile picture">
-  </div>
-  <h1><%= @user.name %></h1>
-  <p>Number of posts: <%= @user.posts_counter %></p>
+<div class="user-profile">
+  <%= render 'shared/user_profile', user: @user %>
 </div>
 
-<div>
+<div class="posts">
   <% @posts.each_with_index do |post, index|%>
-  <%= link_to  user_post_path(@user, post) do %>
-    <div>
-      <h3><%= post.title %> - Post #<%= index + 1 %></h3>
-      <p><%= post.text %></p>
-      <small>Comments: <%= post.comments_counter%>, Likes: <%= post.likes_counter %></small>
-      <div>
-        <% post.comments.each do |comment| %>
-        <p><strong><%= comment.user.name %></strong> <%= comment.text  %></p>
-        <% end %>
-      </div>
-    </div>
+    <%= link_to user_post_path(@user, post) do %>
+      <%= render 'posts/post_preview', post: post, index: index, user: @user, show_comments: true, show_user_details: true %>
     <% end %>
   <% end %>
-  <div>
+  <div class="pagination">
     <button>Pagination</button>
   </div>
 </div>
