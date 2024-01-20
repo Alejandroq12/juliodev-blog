@@ -1,29 +1,18 @@
-<div>
-  <div>
-    <div>
-      <img src="<%= @user.photo %>" width="210" height="265" alt="profile picture">
-    <div>
-    <h1><%= @user.name %></h1>
-    <p>Number of posts: <%= @user.posts_counter %></p>
-  </div>
-  
-  <div>
-    <h3>Bio</h3>
-    <p><%= @user.bio %></p>
-  </div>
-  
-  <div>
-    <% @posts.each_with_index do |post, index| %>
-      <div>
-        <h3><%= post.title %> Post #<%= index + 1 %></h3>
-        <p><%= post.text %></p>
-        <small>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></small>
-      </div>
-    <% end %>
-  </div>
-  
-  
-  <div>
-    <%= link_to 'See all posts', user_posts_path(@user) %>
-  </div>
+<div class="user-profile">
+  <%= render 'shared/user_profile', user: @user %>
+</div>
+
+<div class="user-bio">
+  <h3>Bio</h3>
+  <p><%= @user.bio %></p>
+</div>
+
+<div class="posts">
+  <% @posts.each_with_index do |post, index| %>
+    <%= render 'posts/post_preview', post: post, index: index, user: @user, show_comments: false, show_user_details: false %>
+  <% end %>
+</div>
+
+<div class="all-posts-link">
+  <%= link_to 'See all posts', user_posts_path(@user) %>
 </div>
