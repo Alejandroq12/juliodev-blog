@@ -1,0 +1,14 @@
+<div class="post-preview">
+  <div>
+    <h3><%= post.title %> - Post #<%= index + 1 %></h3>
+    <p><%= post.text %></p>
+    <small>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></small>
+    <% if local_assigns[:show_comments] && show_comments %>
+      <div>
+        <% post.comments.each do |comment| %>
+          <%= render 'shared/comment', comment: comment %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
