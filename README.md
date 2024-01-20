@@ -100,7 +100,7 @@ Run migrations:
 rails db:migrate
 ```
 
-Add the seeds(omit it for this project):
+Add the seeds:
 
 ```sh
 rails db:seed
