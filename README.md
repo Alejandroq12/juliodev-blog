@@ -162,8 +162,8 @@ Not available at the moment.
 - [x] **Processing data in models.**
 - [x] **Controllers.**
 - [x] **Controllers specs.**
-- [ ] **Views.**
-- [ ] **Forms.**
+- [x] **Views.**
+- [x] **Forms.**
 - [ ] **Integration specs for Views and fixing n+1 problems.**
 - [ ] **Add Devise.**
 - [ ] **Add authorization rules.**
