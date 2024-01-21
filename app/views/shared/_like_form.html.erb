@@ -1,0 +1,8 @@
+<h1>New Like</h1>
+
+<div id="form_errors">
+     <!-- Errors will be displayed here -->
+<div>
+<%= form_with model: [user, post, like], url: user_post_likes_path(user, post), local: true do |form| %>
+  <%= form.submit "Like post" %>
+<% end %>
