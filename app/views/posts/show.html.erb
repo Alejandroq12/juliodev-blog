@@ -6,5 +6,7 @@
     <% @recent_comments.each do |comment| %>
       <%= render 'shared/comment', comment: comment %>
     <% end %>
+   <%= render 'shared/comment_form', user: @user, post: @post, comment: @comment %>
+   <%= render 'shared/like_form', user: @user, post: @post, like: @like %>
   </div>
 </div>
