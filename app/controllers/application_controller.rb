@@ -8,4 +8,8 @@ class ApplicationController < ActionController::Base
     # authentication logic in future milestones.
     @current_user = User.first
   end
+
+  def set_user
+    @user = current_user
+  end
 end
