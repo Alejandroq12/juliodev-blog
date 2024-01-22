@@ -201,7 +201,8 @@ I would like to thank all of my colleagues who inspire to do my best everyday.
 
 **What did you learn?**
 
-- I will answer this question once I have made 20% progress on this project.
+During the development of this project, I have acquired knowledge in various areas, including the creation of data models, data validation, and testing. I have also learned about processing data, building controllers, controller specs, designing views, and correctly implementing forms. One of the most significant achievements for me was understanding routing. Initially, I struggled with understanding how routes function in Rails. However, it's now clear to me how routes operate and how they should be used. For example, if I want to create a new post, I now know how to use the route assigned to the POST method, which corresponds to the 'create' action in the specific controller.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
