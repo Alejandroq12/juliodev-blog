@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: juliodev_blog_production
-  username: juliodev_blog
+  database: <%= ENV['P_DATABASE'] %>
+  username: <%= ENV['P_DATABASE_USERNAME'] %>
   password: <%= ENV["JULIODEV_BLOG_DATABASE_PASSWORD"] %>
