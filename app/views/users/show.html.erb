@@ -9,7 +9,9 @@
 
 <div class="posts">
   <% @posts.each_with_index do |post, index| %>
-    <%= render 'posts/post_preview', post: post, index: index, user: @user, show_comments: false, show_user_details: false %>
+    <%= link_to user_post_path(@user, post) do %>
+      <%= render 'posts/post_preview', post: post, index: index, user: @user, show_comments: false, show_user_details: false %>
+    <% end %>
   <% end %>
 </div>
 
