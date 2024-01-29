@@ -76,14 +76,14 @@ test:
 # the values provided in this file. Alternatively, you can specify a connection
 # URL environment variable explicitly:
 #
-   production:
-     url: <%= ENV["MY_APP_DATABASE_URL"] %>
+#   production:
+#     url: <%= ENV["MY_APP_DATABASE_URL"] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
-# production:
-#   <<: *default
-#   database: <%= ENV['P_DATABASE'] %>
-#   username: <%= ENV['P_DATABASE_USERNAME'] %>
-#   password: <%= ENV["JULIODEV_BLOG_DATABASE_PASSWORD"] %>
+production:
+  <<: *default
+  database: juliodev_blog_production
+  username: juliodev_blog
+  password: <%= ENV["JULIODEV_BLOG_DATABASE_PASSWORD"] %>
