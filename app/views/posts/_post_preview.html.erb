@@ -1,11 +1,12 @@
 <div class="post-preview">
   <div>
     <h3><%= post.title %> - Post #<%= index + 1 %></h3>
-    <p><%= post.text %></p>
+    <p><%=h truncate(post.text, length: PostsHelper::CHARACTER_LIMIT) %></p>
     <small>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></small>
     <% if local_assigns[:show_comments] && show_comments %>
       <div>
-        <% post.comments.each do |comment| %>
+        <% comments_to_display = local_assigns[:display_recent_comments] ? post.recent_comments : post.comments %>
+        <% comments_to_display.each do |comment| %>
           <%= render 'shared/comment', comment: comment %>
         <% end %>
       </div>
