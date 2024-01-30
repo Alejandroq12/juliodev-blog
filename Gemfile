@@ -4,6 +4,8 @@ ruby '3.1.2'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
 gem 'dotenv-rails', groups: %i[development test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
