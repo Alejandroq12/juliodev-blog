@@ -5,10 +5,9 @@
     <small>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></small>
     <% if local_assigns[:show_comments] && show_comments %>
       <div>
-        <% comments_to_display = local_assigns[:display_recent_comments] ? post.recent_comments : post.comments %>
-        <% comments_to_display.each do |comment| %>
-          <%= render 'shared/comment', comment: comment %>
-        <% end %>
+      <% comments.each do |comment| %>
+        <%= render 'shared/comment', comment: comment %>
+      <% end %>
       </div>
     <% end %>
   </div>
