@@ -1,12 +1,12 @@
 <div class="post-details">
-  <h1><%= @post.title %> by <%= current_user.name %></h1>
+  <h1><%= @post.title %> by <%= @post_author.name %></h1>
   <small>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></small>
   <p><%= @post.text %></p>
   <div class="comments">
     <% @recent_comments.each do |comment| %>
       <%= render 'shared/comment', comment: comment %>
     <% end %>
-   <%= render 'shared/comment_form', user: @user, post: @post, comment: @comment %>
-   <%= render 'shared/like_form', user: @user, post: @post, like: @like %>
+   <%= render 'shared/comment_form', user: @current_user, post: @post, comment: @comment %>
+   <%= render 'shared/like_form', user: @current_user, post: @post, like: @like %>
   </div>
 </div>
