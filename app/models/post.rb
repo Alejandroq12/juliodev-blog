@@ -10,7 +10,11 @@ class Post < ApplicationRecord
   after_create :update_post_counter
 
   def recent_comments
-    comments.order(created_at: :desc).limit(5)
+    if comments.loaded?
+      comments.order(created_at: :desc).limit(5)
+    else
+      comments.includes(:user).order(created_at: :desc).limit(5)
+    end
   end
 
   private
