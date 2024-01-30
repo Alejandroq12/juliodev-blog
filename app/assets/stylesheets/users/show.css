@@ -43,23 +43,10 @@
   margin: 0;
 }
 
-.pagination button {
-  display: block;
-  width: 100%;
-  padding: 10px 0;
-  border: 1px solid #000;
-  background-color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
 .posts a {
   text-decoration: none;
   color: inherit;
-}
-
-.pagination button:hover {
-  background-color: #f7f7f7;
 }
 
 .all-posts-link {
@@ -120,4 +107,41 @@
 
 .post-preview .comment {
   padding-left: 20px;
+}
+
+.pagination {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.pagination .page {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.pagination .page:hover {
+  background-color: #bd0000;
+  color: #fff;
+  border-color: #bd0000;
+}
+
+.pagination .page.current {
+  background-color: #bd0000;
+  color: #fff;
+  border-color: #bd0000;
+  pointer-events: none;
+  cursor: default;
+}
+
+.pagination .page.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  pointer-events: none;
 }
