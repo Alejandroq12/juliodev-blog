@@ -128,6 +128,11 @@ If you wish to run only the controller request tests, you can specify the path t
 rspec spec/requests/ 
 ```
 
+If you wish to run only the integration tests:
+```sh
+rspec spec/system
+```
+
 ### Run linter
 
 To run linter, run the following command:
@@ -164,7 +169,7 @@ Not available at the moment.
 - [x] **Controllers specs.**
 - [x] **Views.**
 - [x] **Forms.**
-- [ ] **Integration specs for Views and fixing n+1 problems.**
+- [x] **Integration specs for Views and fixing n+1 problems.**
 - [ ] **Add Devise.**
 - [ ] **Add authorization rules.**
 - [ ] **Add API endpoints.**
