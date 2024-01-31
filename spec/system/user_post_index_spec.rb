@@ -46,4 +46,20 @@ RSpec.describe 'User post index page', type: :system do
       expect(page).to have_content("Comments: #{post.comments_counter}")
     end
   end
+
+  it 'shows how many likes a post has' do
+    @posts.each do |post|
+      expect(page).to have_content("Likes: #{post.likes_counter}")
+    end
+  end
+
+  it 'redirects to a post\'s show page when I click a post' do
+    @posts.first
+    first('a').click
+    expect(page).to have_current_path(%r{/users/\d+/posts/\d+}, url: true)
+  end
+
+  it 'shows a section for pagination if there are more posts than fit on the view' do
+    expect(page).to have_selector('.pagination') if @posts.size > 5
+  end
 end
