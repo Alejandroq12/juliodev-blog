@@ -46,7 +46,8 @@ The JulioDev Blog is a full-stack web application that I created from scratch. M
 
 ### Key Features <a name="key-features"></a>
 
-- **Right now it is under construction.**
+- **It allows users create posts.**
+- **It has many views.**
 
 
 
