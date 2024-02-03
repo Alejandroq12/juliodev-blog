@@ -1,0 +1,137 @@
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#login-form,
+#registration-form,
+#password-new-form,
+#password-change-form {
+  width: 75%;
+  margin: 2rem auto;
+  padding: 3rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#login-form h2,
+#registration-form h2,
+#password-new-form h2,
+#password-change-form h2 {
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#login-form .field,
+#registration-form .field,
+#password-new-form .field,
+#password-change-form .field {
+  margin-bottom: 1rem;
+}
+
+#login-form label,
+#registration-form label,
+#password-new-form label,
+#password-change-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+#login-form input[type="text"],
+#login-form input[type="email"],
+#login-form input[type="password"],
+#registration-form input[type="text"],
+#registration-form input[type="email"],
+#registration-form input[type="password"],
+#password-new-form input[type="email"],
+#password-change-form input[type="password"],
+#password-change-form input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#login-form input[type="submit"],
+#registration-form input[type="submit"],
+#password-new-form input[type="submit"],
+#password-change-form input[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#login-form input[type="submit"]:hover,
+#registration-form input[type="submit"]:hover,
+#password-new-form input[type="submit"]:hover,
+#password-change-form input[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+#login-form .links,
+#registration-form .links,
+#password-new-form .links,
+#password-change-form .links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#login-form .links a,
+#registration-form .links a,
+#password-new-form .links a,
+#password-change-form .links a {
+  color: #5cb85c;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+#login-form .links a:hover,
+#registration-form .links a:hover,
+#password-new-form .links a:hover,
+#password-change-form .links a:hover {
+  text-decoration: underline;
+}
+
+.bottom-instructions {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-instructions a {
+  color: #000;
+  text-decoration: none;
+}
+
+.bottom-instructions a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #login-form,
+  #registration-form,
+  #password-new-form,
+  #password-change-form {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #login-form,
+  #registration-form,
+  #password-new-form,
+  #password-change-form {
+    max-width: 900px;
+  }
+}
