@@ -11,7 +11,7 @@ h2 {
   width: 75%;
   margin: 2rem auto;
   padding: 3rem;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -40,6 +40,15 @@ h2 {
   display: block;
   margin-bottom: 0.5rem;
   color: #666;
+}
+
+.bottom-instructions a {
+  color: #000;
+  text-decoration: none;
+}
+
+.bottom-instructions a:hover {
+  text-decoration: underline;
 }
 
 #login-form input[type="text"],
@@ -107,15 +116,6 @@ h2 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.bottom-instructions a {
-  color: #000;
-  text-decoration: none;
-}
-
-.bottom-instructions a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

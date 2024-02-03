@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import "forms/devise_forms";
+@import "forms/devise_forms";
 
 *,
 *::before,
