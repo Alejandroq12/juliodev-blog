@@ -7,17 +7,19 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
     <%= javascript_importmap_tags %>
   </head>
   
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
-    <div>
+        <div>
       <% if user_signed_in? %>
-        <%= link_to "New blog post", new_blog_post_path %>
+        <%# <%= link_to "New blog post", new_blog_post_path %> 
         <%#=  link_to "Profile", edit_user_registration_path %>
-        <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+        <%= button_to "Log out", destroy_user_session_path, method: :delete %><br />
+        <%= link_to 'Create new post', new_user_post_path(current_user) %>
+
       <%# else %>
         <%#= link_to "Login", new_user_session_path %>
         <%#= link_to "Sign up", new_user_registration_path %>
