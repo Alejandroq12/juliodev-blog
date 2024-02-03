@@ -87,7 +87,7 @@ npm install
 
 ### Database
 
-Important: please, rename .env.example to .env and fill out all necessary fields otherwise you will be able to connect to the database.
+Important: please, rename .env.example to .env and fill out all necessary fields otherwise you will not be able to connect to the database.
 
 Before running the migrations and seeds, ensure that PostgreSQL is installed and running:
 
@@ -140,6 +140,10 @@ To run linter, run the following command:
 
 ```sh
 rubocop
+
+```
+```sh
+npx stylelint "**/*.{css,scss}"
 ```
 
 ### Deployment
@@ -171,7 +175,7 @@ Not available at the moment.
 - [x] **Views.**
 - [x] **Forms.**
 - [x] **Integration specs for Views and fixing n+1 problems.**
-- [ ] **Add Devise.**
+- [x] **Add Devise.**
 - [ ] **Add authorization rules.**
 - [ ] **Add API endpoints.**
 - [ ] **API documentation.**
