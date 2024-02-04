@@ -95,6 +95,12 @@ Before running the migrations and seeds, ensure that PostgreSQL is installed and
 sudo service postgresql start
 ```
 
+Create database:
+
+```sh
+rails db:create
+```
+
 Run migrations:
 
 ```sh
